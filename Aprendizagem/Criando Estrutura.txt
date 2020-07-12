@@ -1,0 +1,44 @@
+Vamos criar um projeto como a aplicação "Product Hunt".
+
+Mas somente a parte da API Rest é claro.
+
+Primeiramente vamos executar na raiz do nosso projeto 
+"npm init -y".
+
+O "npm init" como já conhecemos ele cria o arquivo
+"package.json", que é o arquivo aonde estar armazenadas
+todas as informações referentes ao nosso projeto, inclusive as dependências.
+
+e o "-y" é praticamente para que ele deixe as informações correspondentes ao
+nome, versão, descrição, etc, tudo como o padrão (não nos faça perguntas).
+
+
+A principal função do package.json é guardar as dependências do nosso projeto junto com a versão delas.
+
+
+1° Dependência que vamos instalar é justamente o express, executamos:
+
+"npm install express"
+
+Como não especificamos a versão do express que instalamos, ele utiliza a ultima versão estável do express.
+
+O que é o Express?
+
+O Express é um micro-framework para lidar com rotas e views.
+
+Rotas - Os endereços da URL que o usuário poderá acessar da nossa API. 
+
+Views - formas de visualização (não vamos utlizar)
+
+Agora que já instalamos o Express vamos começar configurando o nosso servidor, o arquivo principal da nossa aplicação, aquele arquivo que vai inicilizar toda a nossa aplicação.
+
+
+Falando sobre o arquivo package-lock.json, o que ele faz?
+
+Por exemplo, o Express depende do debug (podemos visualizar isso dentro da nossa pasta node_modules),
+se instalarmos outra dependência além do Express, e ela também depender do debug, ele não irá ser 
+instalado novamente, então é praticamente um arquivo de cach.
+
+Então já configuramos a estrutura do nosso servidor, e podemos executá-lo dessa forma:
+
+"node server.js"

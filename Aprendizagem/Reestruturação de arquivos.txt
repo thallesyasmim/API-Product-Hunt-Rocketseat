@@ -1,0 +1,12 @@
+Separação de responsabilidades:
+
+- Rotas
+- Controllers
+
+Dentro do modelo MVC, Model View Control nós temos os controllers.
+
+JSON - Estrutura de dados muito utilizadas em API'S REST.
+
+Estrutura de dados - Forma que é facil de ler e mudar dados dentro de uma estrutura.
+E como vamos utilizar JavaScript tanto no backend quanto no front-end fica muito fácil utlizar essa estrutura.
+

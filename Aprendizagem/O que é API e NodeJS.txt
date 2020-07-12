@@ -1,0 +1,38 @@
+O NodeJS ele permite que a gente rode JavaScript no servidor,
+que é uma linguagem popularmente utlizada na web ou
+front-end. JavaScript foi uma linguagem inicialmente criada
+para manipulação da interface no navegador (browser), e hoje
+em dia ele é utlizado tanto para desenvolvimento mobile com React Native,
+como para o servidor (back-end) com o NodeJS.
+
+NodeJS é uma plataforma que utiliza do Engine V8 do
+Chrome (Máquina de entendimento de JavaScript do Chrome) para rodar JavaScript do lado do servidor.
+
+
+Basicamente hoje há dois tipos de aplicação que utilizamos muito:
+
+1° Aplicações Full MVC - Quando criamos a parte visual junto com nosso back-end.
+
+Exemplo: Wordpress, muito conhecido no PHP, exemplo desse tipo de aplicação.
+O Front-end e o servidor estão unidos, eles não ficam separados.
+
+
+2° Aplicações com API Rest - Quando criamos uma aplicação utlizando esse conceito de API Rest, nós separamos o front-end do back-end.
+
+Então temos o back-end que serve apenas para manipular as informações do banco de dados, receber requisições, enviar respostas.
+E o front-end separado construído com alguma linguagem / biblioteca front-end muito conhecida como por exemplo o React, VueJS, React Native, Angular.
+
+
+E quais são os benefícios de se utilizar API Rest?
+
+Uma API Rest oferece mais flexibilidade no nosso front-end, já que essas bibliotecas que citamos fornecem essa flexibilidade, então conseguimos tratar dos dados de uma maneira mais legal.
+Claro que aumenta um pouco a complexidade mas o resultado final é melhor.
+
+E támbem podemos trabalhar com uma única API para diferentes plataformas!
+
+Então conseguimos ter um único back-end por exemplo constrúido com o NodeJS servindo informações para uma aplicação mobile sendo criada com Swift, Java ou React Native e também uma aplicação web criada com React, 
+além de servir também (vamos supor) um público, uma comunidade que gostaria de acessar os dados da nossa aplicação.
+
+Que é o que vamos aprender aqui, criar um back-end que sirva diferentes front-end's com NodeJS, Express e MongoDB.
+
+ 

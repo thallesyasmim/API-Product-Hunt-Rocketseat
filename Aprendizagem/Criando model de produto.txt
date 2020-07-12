@@ -1,0 +1,2 @@
+Model - Dentro do modelo MVC representa uma tabela no banco de dados.
+

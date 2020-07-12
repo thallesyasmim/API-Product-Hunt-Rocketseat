@@ -1,0 +1,2 @@
+- Ir no site da Insomnia e instalar ele.
+- Configuração do baseURL.

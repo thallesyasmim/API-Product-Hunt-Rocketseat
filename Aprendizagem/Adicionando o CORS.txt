@@ -1,0 +1,21 @@
+Agora estamos no passo final para terminarmos nossa API!
+
+E o que vamos fazer é permitir que outros endereços possam acessar nossa API.
+
+Por enquanto somente acessamos ela através do Insomnia ou pelo próprio endereço dela,
+então se quisermos acessar nossa API através de uma aplicação web por exemplo ou de outro
+domínio por exemplo www.meuappreact.com essa etapa é muito importante.
+
+E quem não permite esse acesso imediato é o CORS.
+
+Então vamos instalar o CORS para que nossa API possa ser acessada
+por qualquer tipo de domínio externo.
+
+npm install cors
+
+Então vamos no nosso server, importamos o CORS e fazemos um Middleware do CORS:
+
+app.use(cors());
+
+Conseguimos fazer algumas configurações a mais passando quais domínios podem acessar nossa API, mas vamos deixar
+dessa forma para que todos possam acessa-lá.

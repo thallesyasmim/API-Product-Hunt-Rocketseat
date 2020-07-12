@@ -1,0 +1,14 @@
+Mongoose - ORM de bancos de dados não relacionais (noSQL).
+
+Sequelize - ORM de bancos de dados relacionais (SQL).
+
+ORM (Object Relational Mapping) - Encapsula a lógica das operações do banco de dados através do código.
+
+O que isso significa?
+
+Ao invés de utilizarmos Querys, ou seja, a linguagem do banco de dados,
+por exemplo SQL, então INSERT INTO, vamos utilizar apenas
+JavaScript para fazer inserts, deletes, selects, etc.
+
+Ele transforma nossas tabelas no banco de dados em objetos aqui no JavaScript.
+

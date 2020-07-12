@@ -1,0 +1,51 @@
+Vamos instalar o MongoDB na nossa máquina e para isso vamos usar um software chamado Docker.
+
+Por que vamos utlizar o Docker?
+
+O docker é um software que nos permite fazer a conteinerização de recursos e softwares dentro da nossa máquina.
+
+O que é esse conceito de conteinerização?
+
+Por exemplo, instlamos o MySQL no nosso computador, e desintalamos ele.
+Tivemos que reinstalar, e sobrou resquicíos da outra instalação e causou conflito,
+Essas instalações que falamos são coisas de desenvolvedor, como MongoDB, SQL, NodeJS, NPM, e assim vai.
+
+Então conseguimos fazer todas essas instalações em containers, em máquinas virtuais para que a gente não precise, caso
+a gente precise deletar alguma dessas coisas depois, a gente não precise mexer nada no nosso sistema.
+
+Então a gente vai subir uma máquina virtual rodando um sistema linux por trás que vai conter a instalação do MongoDB nesse caso, mas poderia ser MySQL, poderia ser qualquer coisa!
+
+
+Depois de instalado, nós podemos executar "docker" no nosso terminal e ele irá dar uma lista de comandos.
+
+E si em algum momento nós precisarmos alterar, recriar ou deletar irá ficar muito fácil porque essa máquina virtual não vai alterar nada no nosso sistema, será um sistema totalmente
+a parte que podemos manipular da forma que nós quisermos.
+
+
+
+Então como vamos fazer para instalar o mongoDB?
+
+1° - Vamos baixar a máquina virtual do MongoDB (container do MongoDB) !
+
+Executamos: "docker pull mongo" (raiz do projeto)
+
+
+2° - Depois de já baixado, temos que subir uma nova máquina virtual/novo container contendo essa instalação rodando.
+
+Executamos: docker run --name mongodb -p 27017:27017 -d mongo
+
+Explicação: Esse name é o nome que vamos dar ao container, e o -p, é para que, como vamos estar rodando um sistema operacional a parte do nosso sistema,
+o MongoDB ele usa a porta 27017, então vamos fazer um redirecionamento de porta, toda vez que tentarmos acessar a porta 27017 da nossa máquina ele vai redirecinar para
+a porta 27017 do MongoDB que está instalado aqui dentro desse container e o -d é praticamente qual é a imagem que queremos usar, a imagem seria aquele "pull" que fizemos.
+
+
+3° - Podemos executar o comando "docker ps" ele retornar quais imagens estão rodando.
+
+
+Como podemos testar isso?
+
+Podemos ir no nosso navegador e digitar "localhost:27017" e ele retornará uma mensagem.
+
+Mas como podemos ver as schemas, as databases do meu MongoDB, etc?
+
+Podemos utlizar um software chamado "robo3t", vamos instalar ele.

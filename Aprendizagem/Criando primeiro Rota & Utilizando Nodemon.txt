@@ -1,0 +1,41 @@
+Requsição - Já quando acessamos o nosso servidor, "https://localhost:3001" estamos fazendo uma requisição,
+
+E o que podemos utlizar dessa requisição, o que está dentro dela?
+
+Paramêtros, corpo da requisição, cabeçalho da requisição, usuário que está fzd a requisição, autenticação, IP (vamos utilizar ele durante o curso).
+
+
+Resposta - seria literalmente a resposta que enviamos dessa requisição.
+
+Primeira rota utlizando o Express:
+
+app.get('/', (req, res) => {
+    res.send('Hello Rocketseat!')
+});
+
+
+
+
+
+
+
+
+
+
+============ Utilizando o Nodemon ================
+
+Como foi citado anteriormente, toda alteração que fizéssemos no nosso servidor
+teriámos que parar o "node server.js" e executar novamente.
+
+então pra isso vamos utlizar uma ferramente que vai verificar as alterações no nosso servidor, e dar um restart.
+e essa ferramenta é o Nodemon.
+
+"npm install nodemon -D" (Vamos instalar como dependência de desenvolvimento).
+
+
+E também criamos um novo script, com nome dev e colocamos o "nodemon server.js" como valor deste nosso script,
+que vai funcionar como um atalho, para não precisarmos escrever "nodemon server.js" a todo momento no nosso terminal.
+
+e agora podemos executar este nosso script dessa forma:
+
+"npm run dev" (o npm run é justamente para executarmos esses scripts, podemos criar quantos quisermos). 

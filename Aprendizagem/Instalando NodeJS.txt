@@ -1,0 +1,19 @@
+Podemos instalar o NodeJS tanto daquela forma mais tranquila,
+baixando o instalador simplesmente.
+
+Mas é recomendado instalar utlizando um gerenciador de pacotes, porque assim
+fica fácil de desintalar o NodeJS ou atualizar para versões mais recentes.
+
+No site do NodeJS nós vamos em other downloads e lá embaixo
+clicamos em "instalar o NodeJS com um gerenciador de pacotes", clicamos e 
+escolhemos o package manager conforme o nosso sistema operacional.
+
+no Windows é recomendado utlizar o Chocolatey, no MacOS o HomeBrew, e no linux tem as informações correspontes a versão que estiver utlizando no site do NodeJS.
+
+E para conseguirmos saber se o NodeJS está instalado podemos abrir o terminal e executar:
+
+node -v
+
+E também podemos verificar o NPM, que vem junto com o NodeJS:
+
+npm -v
